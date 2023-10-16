@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@tryfabric/mack": "^1.2.1"
+  }
+}
