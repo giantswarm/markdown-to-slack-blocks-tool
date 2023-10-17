@@ -2,3 +2,16 @@ version: 2.1
 
 orbs:
   architect: giantswarm/architect@4.31.0
+
+workflows:
+  test:
+    jobs:
+      - architect/push-to-docker:
+          context: architect
+          name: push-to-quay
+          image: "quay.io/giantswarm/markdown-to-slack-blocks-tool"
+          username_envar: "QUAY_USERNAME"
+          password_envar: "QUAY_PASSWORD"
+          filters:
+            tags:
+              only: /^v.*/
