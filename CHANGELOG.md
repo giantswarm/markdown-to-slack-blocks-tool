@@ -9,6 +9,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.0.1] - 2023-10-17
 
 
-[Unreleased]: https://github.com/giantswarm/markdown-to-slack-blocks-tool/tree/main
+
+[Unreleased]: https://github.com/giantswarm/markdown-to-slack-blocks-tool/compare/v0.0.1...HEAD
+[0.0.1]: https://github.com/giantswarm/markdown-to-slack-blocks-tool/releases/tag/v0.0.1
