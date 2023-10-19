@@ -1,11 +1,11 @@
 FROM node:18-slim
 
-# Create app directory
 WORKDIR /usr/src/app
 
-RUN npm install @tryfabric/mack
+COPY package.json ./
 
-# Bundle app source
+RUN npm install --production
+
 COPY server.js ./
 
 EXPOSE 8080
