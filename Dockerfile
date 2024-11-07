@@ -1,5 +1,7 @@
 FROM node:18-slim
 
+RUN apt update && apt install curl -y
+
 WORKDIR /usr/src/app
 
 COPY package.json ./
